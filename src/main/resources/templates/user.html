@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link th:replace="~{page-templates :: bootstrap}">
+    <link rel="stylesheet" th:href="@{css/style.css}">
+    <link rel="stylesheet" th:href="@{css/user.css}">
+    <title th:text="${title} + ' | Security Demo'"></title>
+</head>
+<body>
+<div th:replace="~{page-templates :: menu}"></div>
+<main>
+    <p th:text="${text}"></p>
+</main>
+<div th:replace="~{page-templates :: footer}"></div>
+</body>
+</html>
